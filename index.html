@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site officiel du Centre d’Évangélisation Maranatha à Pointe-Noire, République du Congo. Sauvés pour sauver. Pasteur Nahim POUNDY.">
+    <title>Centre d’Évangélisation Maranatha | « Sauvés pour sauver »</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Barre d'annonce supérieure -->
+    <aside class="top-bar" aria-label="Informations rapides">
+        <div class="container top-bar-content">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>Quartier La Base, Arrêt entrée KM4 de La Base, Pointe-Noire</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/242000000000" target="_blank" rel="noopener noreferrer" class="top-bar-link">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Pastoral
+                </a>
+                <span class="divider">|</span>
+                <span class="motto-tag">« Sauvés pour sauver »</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Navigation principale -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#accueil" class="brand-identity" aria-label="Retour à l'accueil">
+                <div class="logo-wrapper">
+                    <!-- Schéma SVG vectoriel fidèle au logo officiel CEM -->
+                    <svg class="site-logo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Centre d'Évangélisation Maranatha">
+                        <defs>
+                            <linearGradient id="globeGrad" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#4fc3f7"/>
+                                <stop offset="50%" stop-color="#0288d1"/>
+                                <stop offset="100%" stop-color="#01579b"/>
+                            </linearGradient>
+                            <linearGradient id="crossGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#8d5b28"/>
+                                <stop offset="50%" stop-color="#4e2c0e"/>
+                                <stop offset="100%" stop-color="#2a1405"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Globe terrestre -->
+                        <circle cx="100" cy="100" r="76" fill="url(#globeGrad)"/>
+                        <path d="M60 65 Q 85 40, 120 50 Q 145 60, 150 90 Q 130 110, 125 130 Q 100 150, 75 125 Q 50 110, 60 65 Z" fill="#ffffff" opacity="0.85"/>
+                        <path d="M70 115 Q 95 105, 110 120 Q 95 160, 85 170 Q 75 155, 70 115 Z" fill="#ffffff" opacity="0.85"/>
+                        <!-- Croix centrale -->
+                        <rect x="88" y="38" width="24" height="118" rx="2" fill="url(#crossGrad)" stroke="#ffecb3" stroke-width="1.5"/>
+                        <rect x="58" y="68" width="84" height="22" rx="2" fill="url(#crossGrad)" stroke="#ffecb3" stroke-width="1.5"/>
+                        <!-- Acronyme C.E.M -->
+                        <text x="100" y="103" text-anchor="middle" fill="#d32f2f" font-family="'Montserrat', sans-serif" font-weight="800" font-size="14" letter-spacing="1">C.E.M</text>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">CENTRE D’ÉVANGÉLISATION</span>
+                    <span class="brand-sub">MARANATHA</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                    <li><a href="#activites" class="nav-link">Nos Activités</a></li>
+                    <li><a href="#predications" class="nav-link">Prédications</a></li>
+                    <li><a href="#evenements" class="nav-link">Événements</a></li>
+                    <li><a href="#priere" class="nav-link">Besoin de Prière</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-action">
+                    <a href="#don" class="btn btn-donate"><i class="fa-solid fa-heart"></i> Faire un don</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Héro -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-church"></i> Bienvenue au Centre d’Évangélisation Maranatha
+                </div>
+                <h1 class="hero-title">Sauvés pour Sauver</h1>
+                <p class="hero-identity-statement">
+                    « Jésus-Christ, Sauveur, Guérisseur et Baptiseur. »
+                </p>
+                <p class="hero-description">
+                    Une communauté de foi, d'espérance et d'amour à Pointe-Noire, engagée dans l'annonce intégrale de l'Évangile de grâce et la puissance de la transformation en Christ.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#activites" class="btn btn-primary"><i class="fa-regular fa-clock"></i> Rejoindre un Culte</a>
+                    <a href="#priere" class="btn btn-secondary"><i class="fa-solid fa-hands-praying"></i> Demander une Prière</a>
+                </div>
+                <div class="hero-quick-info">
+                    <div class="quick-info-card">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <div>
+                            <h4>Culte d'Adoration</h4>
+                            <p>Chaque Dimanche à 08h30</p>
+                        </div>
+                    </div>
+                    <div class="quick-info-card">
+                        <i class="fa-solid fa-fire"></i>
+                        <div>
+                            <h4>Intercession & Prière</h4>
+                            <p>Mardi & Jeudi à 17h00</p>
+                        </div>
+                    </div>
+                    <div class="quick-info-card">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Pointe-Noire, Quartier La Base</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bandeau d'Identité et Confession de Foi -->
+        <section class="identity-banner">
+            <div class="container">
+                <div class="banner-grid">
+                    <div class="banner-pillar">
+                        <div class="pillar-icon"><i class="fa-solid fa-cross"></i></div>
+                        <h3>Sauveur</h3>
+                        <p>La réconciliation parfaite de l'âme avec Dieu par le sacrifice expiatoire de Jésus-Christ.</p>
+                    </div>
+                    <div class="banner-pillar">
+                        <div class="pillar-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                        <h3>Guérisseur</h3>
+                        <p>La délivrance et la guérison divine pour les cœurs brisés et les corps affligés.</p>
+                    </div>
+                    <div class="banner-pillar">
+                        <div class="pillar-icon"><i class="fa-solid fa-dove"></i></div>
+                        <h3>Baptiseur</h3>
+                        <p>Le baptême dans le Saint-Esprit accordant la puissance divine pour être témoins fidèles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="a-propos" class="section about-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Découvrir l'Église</span>
+                    <h2 class="section-title">Notre Vision & Notre Berger</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card founder-profile">
+                        <div class="founder-image-box">
+                            <div class="pastoral-badge">
+                                <i class="fa-solid fa-bible"></i> Direction Pastorale
+                            </div>
+                            <div class="avatar-placeholder">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <div class="founder-details">
+                            <span class="founder-role">Fondateur & Responsable Pastoral</span>
+                            <h3 class="founder-name">Pasteur Nahim POUNDY</h3>
+                            <blockquote class="founder-quote">
+                                « Notre mission est d'amener chaque âme à l'expérience rédemptrice de la Croix, afin qu'à son tour chaque racheté devienne un instrument de salut pour sa génération. »
+                            </blockquote>
+                            <p class="founder-bio">
+                                Établi par la grâce divine à la tête du Centre d'Évangélisation Maranatha, le Pasteur Nahim POUNDY œuvre sans relâche à Pointe-Noire pour l'implantation de la vérité biblique, la consolidation des familles et l'édification de disciples affermis dans la sanctification et l'amour chrétien.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card vision-card">
+                        <h3 class="card-inner-title"><i class="fa-solid fa-compass"></i> Vision & Mandat Divin</h3>
+                        <p>
+                            Le Centre d'Évangélisation Maranatha est une communauté chrétienne vivante fondée sur l'autorité absolue des Saintes Écritures. Répondant au grand mandat missionnaire du Seigneur Jésus-Christ, notre démarche s'articule autour de quatre axes majeurs :
+                        </p>
+                        <ul class="vision-points">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Proclamation Intégrale :</strong> Prêcher la repentance et la rédemption sans compromis doctrinal.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Édification & Discipulat :</strong> Équiper les croyants pour le service et la vie chrétienne victorieuse.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Compassion & Solidarité :</strong> Porter secours aux veuves, orphelins et démunis de Pointe-Noire et au-delà.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Attente Active de Maranatha :</strong> Préparer l'Église locale pour l'avènement glorieux de notre Seigneur.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nos Activités -->
+        <section id="activites" class="section activities-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Partager la communion fraternelle</span>
+                    <h2 class="section-title">Nos Activités Régulières</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-lead">Vous êtes chaleureusement invité à participer à nos cultes et programmes hebdomadaires.</p>
+                </div>
+
+                <div class="activities-grid">
+                    <article class="activity-card featured">
+                        <div class="activity-card-header">
+                            <span class="day-tag">Dimanche</span>
+                            <span class="time-tag"><i class="fa-regular fa-clock"></i> 08h30 - 11h30</span>
+                        </div>
+                        <div class="activity-card-body">
+                            <div class="act-icon"><i class="fa-solid fa-hands-clapping"></i></div>
+                            <h3>Grand Culte de Louange & d'Adoration</h3>
+                            <p>Moment solennel de louange vivante, de proclamation de la Parole divine et de communion fraternelle pour toute la famille.</p>
+                            <span class="location-indication"><i class="fa-solid fa-map-pin"></i> Temple Principal, KM4</span>
+                        </div>
+                    </article>
+
+                    <article class="activity-card">
+                        <div class="activity-card-header">
+                            <span class="day-tag">Mardi</span>
+                            <span class="time-tag"><i class="fa-regular fa-clock"></i> 17h00 - 18h45</span>
+                        </div>
+                        <div class="activity-card-body">
+                            <div class="act-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3>Réunion de Prière & d'Intercession</h3>
+                            <p>Combat spirituel, prières pour les malades, pour l'Église, les autorités et pour la ville de Pointe-Noire.</p>
+                            <span class="location-indication"><i class="fa-solid fa-map-pin"></i> Temple Principal</span>
+                        </div>
+                    </article>
+
+                    <article class="activity-card">
+                        <div class="activity-card-header">
+                            <span class="day-tag">Jeudi</span>
+                            <span class="time-tag"><i class="fa-regular fa-clock"></i> 17h00 - 18h45</span>
+                        </div>
+                        <div class="activity-card-body">
+                            <div class="act-icon"><i class="fa-solid fa-book-bible"></i></div>
+                            <h3>Étude Biblique & Enseignement</h3>
+                            <p>Approfondissement systématique des Écritures pour bâtir des fondements solides dans la vie spirituelle de chaque croyant.</p>
+                            <span class="location-indication"><i class="fa-solid fa-map-pin"></i> Temple Principal</span>
+                        </div>
+                    </article>
+
+                    <article class="activity-card">
+                        <div class="activity-card-header">
+                            <span class="day-tag">Samedi</span>
+                            <span class="time-tag"><i class="fa-regular fa-clock"></i> 15h30 - 17h30</span>
+                        </div>
+                        <div class="activity-card-body">
+                            <div class="act-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                            <h3>Évangélisation & Départements</h3>
+                            <p>Sorties d'évangélisation en plein air dans le quartier La Base et rencontres des départements de jeunesse et des dames.</p>
+                            <span class="location-indication"><i class="fa-solid fa-map-pin"></i> Arrêt entrée KM4 & Quartiers</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Prédications et Enseignements -->
+        <section id="predications" class="section sermons-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Nourrir votre âme</span>
+                    <h2 class="section-title">Prédications & Ressources</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="sermon-filter-bar">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="audio"><i class="fa-solid fa-headphones"></i> Audio</button>
+                    <button class="filter-btn" data-filter="video"><i class="fa-solid fa-video"></i> Vidéo</button>
+                    <button class="filter-btn" data-filter="texte"><i class="fa-solid fa-file-lines"></i> Études</button>
+                </div>
+
+                <div class="sermons-grid">
+                    <!-- Carte 1 -->
+                    <div class="sermon-card" data-category="audio">
+                        <div class="sermon-badge audio"><i class="fa-solid fa-microphone-lines"></i> Audio</div>
+                        <div class="sermon-content">
+                            <span class="sermon-meta"><i class="fa-regular fa-calendar"></i> Dimanche Dernier | Pr. Nahim POUNDY</span>
+                            <h3 class="sermon-title">Le Pouvoir du Sang de l'Agneau pour Votre Rédemption</h3>
+                            <p class="sermon-passage">Passage : Hébreux 9:11-14</p>
+                            <div class="custom-audio-player">
+                                <button class="play-trigger-btn" aria-label="Écouter le message"><i class="fa-solid fa-play"></i> Écouter (38 min)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 2 -->
+                    <div class="sermon-card" data-category="video">
+                        <div class="sermon-badge video"><i class="fa-solid fa-play"></i> Vidéo</div>
+                        <div class="sermon-content">
+                            <span class="sermon-meta"><i class="fa-regular fa-calendar"></i> Culte Récent | Pr. Nahim POUNDY</span>
+                            <h3 class="sermon-title">Jésus-Christ : Le Même Hier, Aujourd’hui et Éternellement</h3>
+                            <p class="sermon-passage">Passage : Hébreux 13:8</p>
+                            <div class="custom-audio-player">
+                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="play-trigger-btn red-btn">
+                                    <i class="fa-brands fa-youtube"></i> Visionner le Culte
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carte 3 -->
+                    <div class="sermon-card" data-category="texte">
+                        <div class="sermon-badge texte"><i class="fa-solid fa-book-open"></i> Enseignement</div>
+                        <div class="sermon-content">
+                            <span class="sermon-meta"><i class="fa-regular fa-calendar"></i> Série Doctrinale | C.E.M</span>
+                            <h3 class="sermon-title">Pourquoi le Baptême dans le Saint-Esprit est Indispensable</h3>
+                            <p class="sermon-passage">Passage : Actes 1:8 & Actes 2:1-4</p>
+                            <div class="custom-audio-player">
+                                <button class="play-trigger-btn outline-btn"><i class="fa-solid fa-download"></i> Télécharger la fiche PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Événements -->
+        <section id="evenements" class="section events-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Agenda Maranatha</span>
+                    <h2 class="section-title">Événements & Séminaires</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="events-grid">
+                    <div class="event-card-item">
+                        <div class="event-date-box">
+                            <span class="event-month">NOV</span>
+                            <span class="event-day">24-28</span>
+                        </div>
+                        <div class="event-info">
+                            <span class="event-tag">Campagne d'Évangélisation</span>
+                            <h3 class="event-title">Grande Campagne « La Grâce qui Transforme »</h3>
+                            <p class="event-desc">Cinq soirées puissantes de prédication, de miracles et de délivrance en plein cœur du quartier La Base.</p>
+                            <div class="event-details-row">
+                                <span><i class="fa-solid fa-user-check"></i> Orateur : Pasteur Nahim POUNDY</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Terrain KM4 La Base</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card-item">
+                        <div class="event-date-box">
+                            <span class="event-month">DÉC</span>
+                            <span class="event-day">31</span>
+                        </div>
+                        <div class="event-info">
+                            <span class="event-tag">Veillée Spéciale</span>
+                            <h3 class="event-title">Nuit de Traversée : Entrée Solennelle dans la Nouvelle Année</h3>
+                            <p class="event-desc">Veillée d'actions de grâces, de consécration et de proclamation prophétique pour les familles.</p>
+                            <div class="event-details-row">
+                                <span><i class="fa-regular fa-clock"></i> 20h30 jusqu'à l'aube</span>
+                                <span><i class="fa-solid fa-church"></i> Temple Maranatha</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Besoin de Prière -->
+        <section id="priere" class="section prayer-section">
+            <div class="container">
+                <div class="prayer-container-card">
+                    <div class="prayer-intro">
+                        <div class="prayer-badge"><i class="fa-solid fa-lock"></i> Confidentialité Pastorale Garantie</div>
+                        <h2 class="prayer-title">Avez-vous un sujet de prière urgent ?</h2>
+                        <p class="prayer-desc">
+                            « Ne vous inquiétez de rien; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. » (Philippiens 4:6)
+                        </p>
+                        <p>
+                            Le Pasteur Nahim POUNDY et l'équipe d'intercession portent régulièrement vos requêtes devant le trône de la grâce. Vos demandes sont traitées avec discrétion et respect absolu.
+                        </p>
+                        <div class="prayer-points">
+                            <div class="prayer-bullet"><i class="fa-solid fa-check"></i> Guérison physique et restauration</div>
+                            <div class="prayer-bullet"><i class="fa-solid fa-check"></i> Restauration des couples et familles</div>
+                            <div class="prayer-bullet"><i class="fa-solid fa-check"></i> Délivrance spirituelle et salut des proches</div>
+                        </div>
+                    </div>
+
+                    <div class="prayer-form-wrapper">
+                        <form id="prayerForm" class="modern-form" novalidate>
+                            <div class="form-group">
+                                <label for="prayerName">Nom complet (ou anonyme)</label>
+                                <input type="text" id="prayerName" name="prayerName" placeholder="Ex: Frère Thomas ou Anonyme" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="prayerPhone">Téléphone / WhatsApp</label>
+                                    <input type="tel" id="prayerPhone" name="prayerPhone" placeholder="+242 06 000 0000" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="prayerSubject">Catégorie du besoin</label>
+                                    <select id="prayerSubject" name="prayerSubject" required>
+                                        <option value="">Sélectionnez un thème</option>
+                                        <option value="sante">Guérison & Santé</option>
+                                        <option value="famille">Foyer & Famille</option>
+                                        <option value="travail">Emploi & Projets</option>
+                                        <option value="delivrance">Combat Spirituel & Délivrance</option>
+                                        <option value="autre">Autre motif de prière</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="prayerMessage">Expliquez votre situation avec simplicité</label>
+                                <textarea id="prayerMessage" name="prayerMessage" rows="4" placeholder="Partagez votre fardeau avec confiance..." required></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="confidentialConsent" required checked>
+                                <label for="confidentialConsent">Je souhaite que cette requête soit communiquée uniquement à l'équipe pastorale.</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Déposer ma demande de prière
+                            </button>
+                        </form>
+                        <div id="prayerFeedback" class="form-feedback hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Faire un Don (Facultative et bien intégrée) -->
+        <section id="don" class="section donate-section">
+            <div class="container">
+                <div class="donate-box">
+                    <div class="donate-header">
+                        <span class="section-subtitle light">Soutenir l'œuvre du Seigneur</span>
+                        <h2 class="section-title light">Contribuer à l'Évangélisation</h2>
+                        <div class="title-underline light"></div>
+                        <p class="donate-verse">
+                            « Que chacun donne comme il l'a résolu en son cœur, sans tristesse ni contrainte; car Dieu aime celui qui donne avec joie. » (2 Corinthiens 9:7)
+                        </p>
+                    </div>
+
+                    <div class="donate-methods">
+                        <div class="donate-channel">
+                            <div class="channel-icon mtn"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <h4>MTN Mobile Money</h4>
+                            <p class="channel-desc">Pour vos dîmes, offrandes et dons réguliers au Congo :</p>
+                            <span class="phone-number">+242 06 000 00 00</span>
+                            <span class="account-name">Réf : C.E.M Pointe-Noire</span>
+                        </div>
+
+                        <div class="donate-channel">
+                            <div class="channel-icon airtel"><i class="fa-solid fa-wallet"></i></div>
+                            <h4>Airtel Money</h4>
+                            <p class="channel-desc">Facile, sécurisé et immédiat depuis votre téléphone :</p>
+                            <span class="phone-number">+242 05 000 00 00</span>
+                            <span class="account-name">Réf : C.E.M Mission</span>
+                        </div>
+
+                        <div class="donate-channel">
+                            <div class="channel-icon bank"><i class="fa-solid fa-building-columns"></i></div>
+                            <h4>Sur Place & Projets Bâtiment</h4>
+                            <p class="channel-desc">Enveloppes disponibles lors des cultes ou virement direct auprès de l'intendance pastorale.</p>
+                            <span class="phone-number">Temple KM4 La Base</span>
+                            <span class="account-name">Pointe-Noire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact et Localisation -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Nous retrouver & échanger</span>
+                    <h2 class="section-title">Contact & Localisation</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <h4>Adresse de l'Église</h4>
+                                <p>Quartier La Base, arrêt entrée KM4 de La Base<br>Pointe-Noire, République du Congo</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-solid fa-user-shield"></i></div>
+                            <div>
+                                <h4>Responsable Pastoral</h4>
+                                <p>Pasteur Nahim POUNDY</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h4>Ligne d'Écoute & WhatsApp</h4>
+                                <p>Contact direct pour orientations et rendez-vous pastoraux :</p>
+                                <a href="https://wa.me/242000000000" class="contact-action-link">+242 06 000 00 00</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-regular fa-envelope"></i></div>
+                            <div>
+                                <h4>Courrier Électronique</h4>
+                                <p>Pour les correspondances officielles et invitations :</p>
+                                <a href="mailto:contact@cemaranatha.org" class="contact-action-link">contact@cemaranatha.org</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links-church">
+                            <span class="social-label">Rejoignez-nous en ligne :</span>
+                            <div class="social-icons-row">
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-form-wrapper">
+                        <!-- Carte interactive / plan d'accès -->
+                        <div class="map-card">
+                            <div class="map-header-indicator">
+                                <i class="fa-solid fa-compass"></i> Repère d'accès : Entrée KM4 de La Base
+                            </div>
+                            <div class="map-visual-box">
+                                <div class="map-content-prompt">
+                                    <i class="fa-solid fa-church map-big-icon"></i>
+                                    <h3>Centre d'Évangélisation Maranatha</h3>
+                                    <p>Pointe-Noire - Arrêt Entrée KM4 La Base</p>
+                                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-map">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Ouvrir dans Google Maps
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formulaire message rapide -->
+                        <form id="generalContactForm" class="contact-quick-form" novalidate>
+                            <h4>Envoyer un message à l'administration</h4>
+                            <div class="form-group">
+                                <input type="text" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Votre adresse email ou WhatsApp" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="3" placeholder="Votre message ou question..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-block">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <h3>C.E.M</h3>
+                    <p class="tagline">« Sauvés pour sauver »</p>
+                </div>
+                <p class="footer-desc">
+                    Centre d'Évangélisation Maranatha. Jésus-Christ, Sauveur, Guérisseur et Baptiseur.
+                </p>
+                <p class="pastor-ref">Direction : Pasteur Nahim POUNDY</p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À propos & Vision</a></li>
+                    <li><a href="#activites">Nos Cultes & Réunions</a></li>
+                    <li><a href="#predications">Enseignements</a></li>
+                    <li><a href="#priere">Besoin de Prière</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Localisation & Horaires</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Arrêt entrée KM4 de La Base, Pointe-Noire, Congo.</p>
+                <p><i class="fa-regular fa-clock"></i> Culte dominical : 08h30</p>
+                <p><i class="fa-solid fa-phone"></i> +242 06 000 00 00</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; <span id="currentYear"></span> Centre d'Évangélisation Maranatha (C.E.M). Tous droits réservés.</p>
+                <p class="verse-quote">« Voici, je viens bientôt, et ma rétribution est avec moi. » — Apocalypse 22:12</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toastMessage" class="toast-notification" role="status" aria-live="polite"></div>
+
+</body>
+</html>

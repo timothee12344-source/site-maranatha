@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "predications"
+    label: "Prédications & Ressources"
+    folder: "content/predications"
+    create: true
+    fields:
+      - {label: "Titre de la prédication", name: "title", widget: "string"}
+      - {label: "Nom du Pasteur / Orateur", name: "speaker", widget: "string"}
+      - {label: "Passage biblique", name: "passage", widget: "string"}
+      - {label: "Date", name: "date", widget: "date"}
+
+  - name: "evenements"
+    label: "Agenda & Événements"
+    folder: "content/evenements"
+    create: true
+    fields:
+      - {label: "Titre de l'événement", name: "title", widget: "string"}
+      - {label: "Date de début", name: "date_debut", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Lieu", name: "lieu", widget: "string"}
